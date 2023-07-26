@@ -1,0 +1,36 @@
+{
+  "name": "@rugo/db",
+  "version": "1.0.0-beta.0",
+  "description": "DB service for Rugo Platform",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/start.js",
+    "dev": "NODE_ENV=development npm run start",
+    "test": "mocha",
+    "coverage": "c8 npm run test",
+    "publish:beta": "npm publish --access public --tag beta",
+    "publish:release": "npm publish --access public"
+  },
+  "keywords": [
+    "rugo",
+    "microservice",
+    "service",
+    "db"
+  ],
+  "author": "Vu Anh Hao <hi@haova.me> (https://www.haova.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "c8": "^8.0.0",
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "mongodb-memory-server": "^8.13.0"
+  },
+  "dependencies": {
+    "@rugo/schema": "^1.0.1",
+    "@rugo/service": "^1.0.2",
+    "mongoose": "^7.4.1",
+    "ramda": "^0.29.0"
+  }
+}
